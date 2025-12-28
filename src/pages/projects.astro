@@ -1,0 +1,41 @@
+---
+import Base from '../layouts/Base.astro';
+
+const projects = [
+  {
+    name: "Project One",
+    description: "A brief description of what this project does and why it's interesting.",
+    url: "https://github.com/azillion/project-one"
+  },
+  {
+    name: "Project Two",
+    description: "Another project with a short explanation of its purpose.",
+    url: "https://github.com/azillion/project-two"
+  },
+  {
+    name: "Project Three",
+    description: "Something else you've built that you're proud of.",
+    url: "https://github.com/azillion/project-three"
+  }
+];
+---
+
+<Base title="Projects - Alex Zillion">
+  <h1>Projects</h1>
+  <p class="muted">Things I've built.</p>
+  
+  <ul>
+    {projects.map(project => (
+      <li>
+        <a href={project.url}>{project.name}</a> — {project.description}
+      </li>
+    ))}
+  </ul>
+  
+  <hr />
+  
+  <p>
+    More on <a href="https://github.com/azillion">GitHub</a>.
+  </p>
+</Base>
+

@@ -1,0 +1,142 @@
+:root {
+  --font-mono: 'IBM Plex Mono', 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Mono', monospace;
+  --text: #1a1a1a;
+  --bg: #fefefe;
+  --link: #1a1a1a;
+  --muted: #666;
+  --max-width: 65ch;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  line-height: 1.6;
+  background: var(--bg);
+  color: var(--text);
+}
+
+body {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+h1 { font-size: 1.25rem; }
+h2 { font-size: 1.1rem; margin-top: 2rem; }
+h3 { font-size: 1rem; }
+
+p {
+  margin-bottom: 1rem;
+}
+
+ul, ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  margin-bottom: 3rem;
+}
+
+nav a {
+  margin-right: 1.5rem;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.post-date {
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.post-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+.post-list li {
+  margin-bottom: 1rem;
+}
+
+.tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.tag {
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 2rem 0;
+}
+
+article {
+  margin-top: 2rem;
+}
+
+article h1 {
+  margin-bottom: 0.25rem;
+}
+
+.prose h2 {
+  margin-top: 2.5rem;
+}
+
+.prose p {
+  margin-bottom: 1.25rem;
+}
+
+.prose ul, .prose ol {
+  margin-bottom: 1.25rem;
+}
+
+.prose code {
+  background: #f4f4f4;
+  padding: 0.125rem 0.25rem;
+  font-size: 0.9em;
+}
+
+.prose pre {
+  background: #f4f4f4;
+  padding: 1rem;
+  overflow-x: auto;
+  margin-bottom: 1.25rem;
+}
+
+.prose pre code {
+  background: none;
+  padding: 0;
+}
+

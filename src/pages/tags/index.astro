@@ -1,0 +1,34 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog');
+const allTags = [...new Set(posts.flatMap(post => post.data.tags))].sort();
+
+// Count posts per tag
+const tagCounts = allTags.reduce((acc, tag) => {
+  acc[tag] = posts.filter(post => post.data.tags.includes(tag)).length;
+  return acc;
+}, {} as Record<string, number>);
+---
+
+<Base title="Tags - Alex Zillion">
+  <h1>Tags</h1>
+  <p class="muted">Browse posts by topic.</p>
+  
+  <ul>
+    {allTags.map(tag => (
+      <li>
+        <a href={`/tags/${tag}`}>#{tag}</a>
+        <span class="muted"> ({tagCounts[tag]})</span>
+      </li>
+    ))}
+  </ul>
+  
+  <hr />
+  
+  <p>
+    <a href="/blog">← All posts</a>
+  </p>
+</Base>
+

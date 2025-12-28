@@ -1,0 +1,42 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog'))
+  .filter(post => !post.data.draft)
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+function formatDate(date: Date): string {
+  return date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric'
+  });
+}
+---
+
+<Base title="Blog - Alex Zillion">
+  <h1>Blog</h1>
+  <p class="muted">Thoughts on technology, engineering, and other things.</p>
+  
+  <ul class="post-list">
+    {posts.map(post => (
+      <li>
+        <a href={`/blog/${post.id}`}>{post.data.title}</a>
+        <span class="post-date"> — {formatDate(post.data.date)}</span>
+        <div class="tags">
+          {post.data.tags.map(tag => (
+            <a href={`/tags/${tag}`} class="tag">#{tag}</a>
+          ))}
+        </div>
+      </li>
+    ))}
+  </ul>
+  
+  <hr />
+  
+  <p>
+    Subscribe via <a href="/rss.xml">RSS</a>.
+  </p>
+</Base>
+

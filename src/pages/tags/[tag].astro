@@ -1,0 +1,50 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  const allTags = [...new Set(posts.flatMap(post => post.data.tags))];
+  
+  return allTags.map(tag => ({
+    params: { tag },
+    props: {
+      posts: posts
+        .filter(post => post.data.tags.includes(tag) && !post.data.draft)
+        .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()),
+    },
+  }));
+}
+
+const { tag } = Astro.params;
+const { posts } = Astro.props;
+
+function formatDate(date: Date): string {
+  return date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric'
+  });
+}
+---
+
+<Base title={`#${tag} - Alex Zillion`}>
+  <h1>#{tag}</h1>
+  <p class="muted">{posts.length} post{posts.length !== 1 ? 's' : ''} tagged with #{tag}.</p>
+  
+  <ul class="post-list">
+    {posts.map(post => (
+      <li>
+        <a href={`/blog/${post.id}`}>{post.data.title}</a>
+        <span class="post-date"> — {formatDate(post.data.date)}</span>
+      </li>
+    ))}
+  </ul>
+  
+  <hr />
+  
+  <p>
+    <a href="/tags">All tags</a> · <a href="/blog">All posts</a>
+  </p>
+</Base>
+
