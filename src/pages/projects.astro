@@ -22,7 +22,7 @@ const projects = [
   <ul>
     {projects.map(project => (
       <li>
-        <a href={project.url}>{project.name}</a> — {project.description}
+        <a href={project.url} target="_blank" rel="noopener noreferrer">{project.name}</a> — {project.description}
       </li>
     ))}
   </ul>
@@ -30,7 +30,7 @@ const projects = [
   <hr />
   
   <p>
-    More on <a href="https://github.com/azillion">GitHub</a>.
+    More on <a href="https://github.com/azillion" target="_blank" rel="noopener noreferrer">GitHub</a>.
   </p>
 </Base>
 
