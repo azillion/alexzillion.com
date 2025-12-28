@@ -1,10 +1,24 @@
 :root {
-  --font-mono: 'IBM Plex Mono', 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Mono', monospace;
+  --font-serif: 'Source Serif 4', Charter, 'Bitstream Charter', Georgia, serif;
+  --font-mono: 'SF Mono', Monaco, 'Cascadia Code', monospace;
   --text: #1a1a1a;
   --bg: #fefefe;
   --link: #1a1a1a;
   --muted: #666;
+  --border: #ddd;
+  --code-bg: #f4f4f4;
   --max-width: 65ch;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #e5e5e5;
+    --bg: #121212;
+    --link: #e5e5e5;
+    --muted: #999;
+    --border: #333;
+    --code-bg: #1e1e1e;
+  }
 }
 
 * {
@@ -14,7 +28,7 @@
 }
 
 html {
-  font-family: var(--font-mono);
+  font-family: var(--font-serif);
   font-size: 16px;
   line-height: 1.6;
   background: var(--bg);
@@ -22,9 +36,17 @@ html {
 }
 
 body {
-  max-width: var(--max-width);
+  max-width: 900px;
   margin: 0 auto;
   padding: 2rem 1rem;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 4rem;
+}
+
+main {
+  flex: 1;
+  max-width: var(--max-width);
 }
 
 a {
@@ -59,11 +81,26 @@ li {
 }
 
 nav {
-  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 0.25rem;
 }
 
 nav a {
-  margin-right: 1.5rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  body {
+    flex-direction: column;
+  }
+  
+  nav {
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
 }
 
 .muted {
@@ -98,7 +135,7 @@ nav a {
 
 hr {
   border: none;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid var(--border);
   margin: 2rem 0;
 }
 
@@ -123,13 +160,13 @@ article h1 {
 }
 
 .prose code {
-  background: #f4f4f4;
+  background: var(--code-bg);
   padding: 0.125rem 0.25rem;
   font-size: 0.9em;
 }
 
 .prose pre {
-  background: #f4f4f4;
+  background: var(--code-bg);
   padding: 1rem;
   overflow-x: auto;
   margin-bottom: 1.25rem;
@@ -138,5 +175,17 @@ article h1 {
 .prose pre code {
   background: none;
   padding: 0;
+}
+
+.prose code, .prose pre {
+  font-family: var(--font-mono);
+}
+
+.pfp {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
 }
 
