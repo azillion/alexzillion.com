@@ -14,7 +14,7 @@ code is getting cheap. not free, but cheap enough that the bottleneck is shiftin
 for most of software history, the constraint was labor. skilled humans who could translate intent into working systems. companies competed for this labor. they hoarded it. the best engineers were the moat.
 that's breaking down. not because engineers are worthless. because the floor is rising. a mid engineer with ai tools now ships what a senior engineer shipped three years ago. the distribution of "good enough" expanded.
 
-so what's the new bottleneck? the obvious answers are capital, distribution, data, trust. these matter. but they're slow-moving—inertial at a 6-month cadence. they assume a new equilibrium where you figure out the game and then play it.
+so what's the new bottleneck? the obvious answers are capital, distribution, data, trust. these matter. but they're slow-moving; inertial at a 6-month cadence. they assume a new equilibrium where you figure out the game and then play it.
 
 what if there isn't an equilibrium? what if the ground keeps moving?
 
