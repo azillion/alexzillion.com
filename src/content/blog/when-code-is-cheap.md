@@ -57,15 +57,13 @@ taste is a word people use to hide mechanisms they either don't understand or do
 
 same problem with "capital wins" or "distribution wins." these are true but incomplete. they're tautologies, they describe outcomes, not mechanisms. it's like saying "the team with more points wins." yeah. but how do you score?
 
-the deeper issue: all of these assdume a stable game. figure out the new rules, accumulate the new resource, win. but that only works if the rules stop changing
-
-what if they don't?
+the deeper issue: all of these assdume a stable game. the game isn't stable. that's the whole point.
 
 ## So What?
 
 if this is true, what does it mean for your worth as a programmer? as a founder? as someone trying to build something that matters?
 
-the old answer: your worth is your ability to produce. write code, ship features, solve hard technical problems. accumulate skill and watch your value rise.
+the old answer: your worth is your ability to produce. write code, ship features, solve hard technical problems. accumulate skill and watch your value go up.
 
 my new answer: production is cheap. your worth is your ability to adapt and constrain. recognize when the ground shifts. abandon what's working before it stops working. set constraints that others can execute. take responsibility for outcomes, not just outputs.
 
@@ -77,9 +75,8 @@ here's my checklist. the questions i'm asking myself:
 
 - can i define a problem in a way that survives contact with users?
 - can i set constraints others can execute, including ai?
-- can i predict failure modes before they happen?
-- what revenue line or risk class does this work touch?
-- can i recognize when my current approach is dying and kill it first?
+- can i swap components without collapse when the landscape shifts?
+- can i recognize when my current approach is dying and move off it first?
 - what's my internal cycle time vs customer adoption cycle time?
 
 if the answer to most of these is solid, i think you're fine. maybe better off than before. if you can't answer them, the gap is going to widen.
