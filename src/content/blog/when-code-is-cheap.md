@@ -25,7 +25,7 @@ what if there isn't an equilibrium? what if the ground keeps moving?
 before going further, some terms:
 
 - **"code is cheap"** = marginal cost of implementing a feature approaches zero relative to validation + integration
-- **"adaptation velocity"** = time-to-integrate-new-capability into production workflow (not "read hacker news faster")
+- **"adaptation velocity"** = time-to-integrate-new-capability into production workflow
 - **"customer metabolism"** = rate of change the buyer can absorb without trust or regulatory failure
 
 ## The Red Queen
