@@ -2,7 +2,7 @@
 title: "When Code Is Cheap, What Do You Race On?"
 description: "Code is getting cheap. What was the bottleneck (skilled labor to produce working software) is becoming commoditized. So what's the new bottleneck?"
 date: 2024-12-28
-tags: ["meta", "software"]
+tags: ["AI", "software", "career"]
 ---
 
 _70% confidence. this is a bet about the next 2-3 years, not a general theory of technology. i'm reasoning from one industry (legal tech) and may be overfitting and underestimating AI acceleration._
