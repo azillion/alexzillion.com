@@ -114,7 +114,7 @@ so: a window where speed beats skill, followed by a world where skill matters mo
 to be concrete about "skill" here, not taste, but mechanisms:
 
 - **problem framing under ambiguity:** turning vague customer pain into a buildable spec before you've seen the answer
-- **system composition:** swapping components without collapse, maintaining coherence as pieces get replaced. *composibility*
+- **system composition:** swapping components without collapse, maintaining coherence as pieces get replaced. *composability*
 - **distribution and trust building:** the boring, non-automatable work of earning permission to operate
 
 these are the skills that get amplified when production cost drops to zero.
