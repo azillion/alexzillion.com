@@ -55,7 +55,7 @@ when production gets cheap, people reach for "taste" as the new scarcity. taste 
 i don't really buy that.
 taste is a word people use to hide mechanisms they either don't understand or don't want to explain. it's a black box labeled "you either have it or you don't." that's not an explanation. that's a shrug wearing a turtleneck.
 
-same problem with "capital wins" or "distribution wins." these are true but incomplete. they describe base conditions, not how the game works. it's like saying "the team with more points wins." yeah. but how do you score?
+same problem with "capital wins" or "distribution wins." these are true but incomplete. they're tautologies, they describe outcomes, not mechanisms. it's like saying "the team with more points wins." yeah. but how do you score?
 
 the deeper issue: all of these assdume a stable game. figure out the new rules, accumulate the new resource, win. but that only works if the rules stop changing
 
