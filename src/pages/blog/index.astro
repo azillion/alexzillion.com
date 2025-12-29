@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
+import { calculateReadTime, formatReadTime } from '../../utils/readTime';
 
 const posts = (await getCollection('blog'))
   .filter(post => !post.data.draft)
@@ -23,7 +24,8 @@ function formatDate(date: Date): string {
     {posts.map(post => (
       <li>
         <a href={`/blog/${post.id}`}>{post.data.title}</a>
-        <span class="post-date"> — {formatDate(post.data.date)}</span>
+        <br />
+        <span class="post-date">{formatDate(post.data.date)} · {formatReadTime(calculateReadTime(post.body))}</span>
         <div class="tags">
           {post.data.tags.map(tag => (
             <a href={`/tags/${tag}`} class="tag">#{tag}</a>

@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { getCollection, render } from 'astro:content';
+import { calculateReadTime, formatReadTime } from '../../utils/readTime';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -21,6 +22,8 @@ function formatDate(date: Date): string {
   });
 }
 
+const readTime = calculateReadTime(post.body);
+
 const articleData = {
   publishedTime: post.data.date.toISOString(),
   tags: post.data.tags,
@@ -34,12 +37,13 @@ const articleData = {
 >
   <article>
     <h1>{post.data.title}</h1>
-    <p class="post-date">{formatDate(post.data.date)}</p>
+    <p class="post-date">{formatDate(post.data.date)} · {formatReadTime(readTime)}</p>
     <div class="tags">
       {post.data.tags.map(tag => (
         <a href={`/tags/${tag}`} class="tag">#{tag}</a>
       ))}
     </div>
+    <br />
     
     <div class="prose">
       <Content />

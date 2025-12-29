@@ -5,9 +5,9 @@ date: 2024-12-28
 tags: ["AI", "software", "career"]
 ---
 
-_70% confidence. this is a bet about the next 2-3 years, not a general theory of technology. i'm reasoning from one industry (legal tech) and may be overfitting and underestimating AI acceleration._
+_70% confidence. a bet about the next 2-3 years, not a general theory._
 
-## The Premise
+# The Premise
 
 code is getting cheap. not free, but cheap enough that the bottleneck is shifting.
 
