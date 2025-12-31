@@ -30,7 +30,7 @@ before going further, some terms:
 
 ## The Red Queen
 
-there's a line from alice in wonderland. the red queen tells alice: ["it takes all the running you can do, to keep in the same place."](https://sabian.org/looking_glass2.php) this is how [evolution works](https://fs.blog/the-red-queen-effect/). the antelope doesn't need to be fast. it needs to be faster than the other antelopes. and it needs to keep getting faster, because the cheetahs are also adapting. there's no finish line. fitness is relative and temporary. i think this is where we are with ai. the capabilities landscape shifts every six months. what worked in january is table stakes by july. you're not trying to reach a destination. you're trying to maintain a speed.
+there's a line from Through the Looking Glass. the red queen tells alice: ["it takes all the running you can do, to keep in the same place."](https://sabian.org/looking_glass2.php) this is how [evolution works](https://fs.blog/the-red-queen-effect/). the antelope doesn't need to be fast. it needs to be faster than the other antelopes. and it needs to keep getting faster, because the cheetahs are also adapting. there's no finish line. fitness is relative and temporary. i think this is where we are with ai. the capabilities landscape shifts every six months. what worked in january is table stakes by july. you're not trying to reach a destination. you're trying to maintain a speed.
 
 ## Two Races
 
@@ -57,7 +57,7 @@ taste is a word people use to hide mechanisms they either don't understand or do
 
 same problem with "capital wins" or "distribution wins." these are true but incomplete. they're tautologies, they describe outcomes, not mechanisms. it's like saying "the team with more points wins." yeah. but how do you score?
 
-the deeper issue: all of these assdume a stable game. the game isn't stable. that's the whole point.
+the deeper issue: all of these assume a stable game. the game isn't stable. that's the whole point.
 
 ## So What?
 
@@ -83,12 +83,12 @@ if the answer to most of these is solid, i think you're fine. maybe better off t
 
 ## What Could Happen
 
-lhere are some of my bets.
+here are some of my bets.
 
 *what is possible:*
 
 - solo builders ship full products in weeks. one person companies become normal, not exceptional.
-- engineering teams shrink but "operator engineers" who can wrangle ai and own outcomes become kings.
+- engineering teams shrink but "operator engineers" who can wrangle ai and own outcomes become high leverage.
 - implementation-only roles get commoditized. the junior dev who just writes code is competing against every other junior dev plus ai.
 - trust and regulation become the moat. soc-2, iso certifications, enterprise relationships. boring stuff that's expensive to fake.
 - the gap between "uses ai well" and "doesn't use ai" becomes larger than the gap between "great engineer" and "good engineer."
